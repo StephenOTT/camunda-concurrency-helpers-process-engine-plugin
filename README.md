@@ -37,6 +37,21 @@ Then add the following dependency:
  ```
 ❗️ See the Releases for the latest version number ❗️
 
+# Setup the plugin
+
+## Plugin Configuration
+
+<!-- engine plugins -->
+<property name="processEnginePlugins">
+    <list>
+        ...
+        <bean id="concurrencyHelpersProcessEnginePlugin" class="io.digitalstate.camunda.concurrency.ConcurrencyHelpersProcessEnginePlugin">
+        </bean>
+        ...
+    </list>
+</property>
+
+
 # Concurrency Data Aggregation (Concurrent HashMap)
 
 This helper is a simple static ConcurrentHashMap that provides a in-memory storage space outside of the process execution.
