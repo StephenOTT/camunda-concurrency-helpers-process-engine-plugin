@@ -41,6 +41,7 @@ Then add the following dependency:
 
 ## Plugin Configuration
 
+```xml
 <!-- engine plugins -->
 <property name="processEnginePlugins">
     <list>
@@ -50,6 +51,7 @@ Then add the following dependency:
         ...
     </list>
 </property>
+```
 
 
 # Concurrency Data Aggregation (Concurrent HashMap)
